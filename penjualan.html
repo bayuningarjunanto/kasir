@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TB</title>
+
+  <!-- CSS  -->
+  <link rel="shortcut icon" href="images/favico.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+.fast {
+    -vendor-animation-duration: 1s;
+    -vendor-animation-delay: 0s;
+}
+.slow {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 1s;
+}
+.reallyslow {
+    -vendor-animation-duration: 6s;
+    -vendor-animation-delay: 3s;
+}
+</style>
+</head>
+<body>
+
+
+<div class="navbar-fixed" style="padding-bottom: 100px;">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center"><img src="images/Buku.png" width="30px" alt=""></a>
+
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="distributor.html">Distributor</a></li>
+        <li><a href="pasok.html">Pasok</a></li>
+        <li><a href="buku.html">Buku</a></li>
+        <li style="background-color: #f5f5f5;"><a href="penjualan.html">Penjualan</a></li>
+        <li><a href="kasir.html">Kasir</a></li>
+        <li class="red lighten-4"><a href="login.html">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <div class="fixed-action-btn toolbar">
+    <a class="btn-floating blue">
+      <i class="large material-icons">get_app</i>
+    </a>
+    <ul>
+      <li class="waves-effect waves-light" style="padding-top: 10px;"><a href="#!"><img src="images/word.png" alt=""></a></li>
+      <li class="waves-effect waves-light" style="padding-top: 10px;"><a href="#!"><img src="images/excel.png" alt=""></a></li>
+      <li class="waves-effect waves-light" style="padding-top: 10px;"><a href="#!"><img src="images/pdf.png" alt=""></a></li>
+    </ul>
+  </div>
+
+    <div class="row">
+      <div class="col s12 m8">
+  
+        <div class="aniview" av-animation="fadeInLeft">
+          <div class="card-panel">
+            <table class="responsive-table">
+              <thead>
+                <tr>
+                    <th>No</th>
+                    <th>No. Buku</th>
+                    <th>No. Kasir</th>
+                    <th>Jumlah</th>
+                    <th>Total</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>22</td>
+                  <td>0812635</td>
+                  <td>
+                    <ul>
+                      <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                      <li><a class="btn-floating blue" href="editpenjualan.html"><i class="material-icons">edit</i></a></li>
+                      <li><a class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>22</td>
+                  <td>0812635</td>
+                  <td>
+                    <ul>
+                      <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                      <li><a class="btn-floating blue" href="editpenjualan.html"><i class="material-icons">edit</i></a></li>
+                      <li><a class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>22</td>
+                  <td>0812635</td>
+                  <td>
+                    <ul>
+                      <li><a class="btn-floating red"><i class="material-icons">delete</i></a></li>
+                      <li><a class="btn-floating blue" href="editpenjualan.html"><i class="material-icons">edit</i></a></li>
+                      <li><a class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div><!--end col-->
+      <div class="col s12 m4">
+
+        <div class="aniview" av-animation="fadeInRight">
+          <h5 class="center">Input Penjualan</h5>
+
+          <form action="">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>No. Buku</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>No. Kasir</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+
+            <input id="jumlah_penjualan" type="text" class="validate">
+            <label for="jumlah_penjualan">Jumlah Penjualan</label>
+
+            <input id="total_penjualan" type="text" class="validate">
+            <label for="total_penjualan">Total Penjualan</label>
+
+            <input type="text" class="datepicker" value="Tanggal Penjualan">
+          </form>
+
+            <a class="waves-effect green btn">Submit</a>
+        </div>
+
+      </div><!--end col-->
+
+    </div><!--end row-->
+
+
+
+
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+    &copy; TB
+    </div>
+  </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script>
+    $(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider();
+    });</script>
+  <script>
+  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+    $('#modal1').modal('open');
+      $('#modal1').modal('close');
+  </script>
+
+<script src="js/jquery.aniview.js"></script>
+<script>
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+</script>
+    <script>
+      $('.datepicker').pickadate({
+        formatSubmit: 'yyyy/mm/dd',
+        hiddenName: true,
+      })
+    </script>
+<script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
+
+  </body>
+</html>

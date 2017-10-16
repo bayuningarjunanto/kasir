@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>TB</title>
+
+  <!-- CSS  -->
+  <link rel="shortcut icon" href="images/favico.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+.fast {
+    -vendor-animation-duration: 1s;
+    -vendor-animation-delay: 0s;
+}
+.slow {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 1s;
+}
+.reallyslow {
+    -vendor-animation-duration: 6s;
+    -vendor-animation-delay: 3s;
+}
+</style>
+</head>
+<body>
+
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+
+<div class="navbar-fixed" style="padding-bottom: 100px;">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center"><img src="images/Buku.png" width="30px" alt=""></a>
+
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li class="red lighten-4"><a href="login.html">Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <div class="fixed-action-btn toolbar">
+    <a class="btn-floating blue">
+      <i class="large material-icons">get_app</i>
+    </a>
+    <ul>
+      <li class="waves-effect waves-light" style="padding-top: 10px;"><a href="#!"><img src="images/word.png" alt=""></a></li>
+      <li class="waves-effect waves-light" style="padding-top: 10px;"><a href="#!"><img src="images/excel.png" alt=""></a></li>
+      <li class="waves-effect waves-light" style="padding-top: 10px;"><a href="#!"><img src="images/pdf.png" alt=""></a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+  
+        <div class="aniview" av-animation="fadeInLeft">
+          <div class="card-panel">
+            <table class="responsive-table">
+              <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Distributor</th>
+                    <th>Judul Buku</th>
+                    <th>Penulis</th>
+                    <th>Penerbit</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Wahyu</td>
+                  <td>asd</td>
+                  <td>jasdu</td>
+                  <td>jyawe</td>
+
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Fadly</td>
+                  <td>asd</td>
+                  <td>jasdu</td>
+                  <td>jyawe</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Eka</td>
+                  <td>asd</td>
+                  <td>jasdu</td>
+                  <td>jyawe</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div><!--end col-->
+    </div><!--end row-->
+  </div>
+
+
+
+
+<footer class="page-footer" style="margin-top: 250px;">
+  <div class="footer-copyright">
+    <div class="container">
+    &copy; TB
+    </div>
+  </div>
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider();
+    });</script>
+  <script>
+  $(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+    $('#modal1').modal('open');
+      $('#modal1').modal('close');
+  </script>
+
+<script src="js/jquery.aniview.js"></script>
+<script>
+var options = {
+    animateThreshold: 100,
+    scrollPollInterval: 20
+}
+$('.aniview').AniView(options);
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  </body>
+</html>
